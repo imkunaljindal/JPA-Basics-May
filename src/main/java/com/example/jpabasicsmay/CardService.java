@@ -7,9 +7,8 @@ import org.springframework.stereotype.Service;
 public class CardService {
 
     @Autowired LibraryCardRepository libraryCardRepository;
+    @Autowired StudentRepository studentRepository;
 
-    public void addCard(LibraryCard card){
-
-        libraryCardRepository.save(card);
+    public void addCard(LibraryCard card) throws Exception {
     }
 }
